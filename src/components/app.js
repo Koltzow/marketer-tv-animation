@@ -2,7 +2,7 @@ import { Component } from 'preact';
 
 import styles from './app.css';
 
-import Video from '/assets/video.mp4';
+import Video from '/assets/video1.mp4';
 import Logo from '/assets/marketer-logo.svg';
 export default class App extends Component {
   /** Gets fired when the route changes.
