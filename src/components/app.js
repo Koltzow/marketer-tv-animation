@@ -14,12 +14,9 @@ export default class App extends Component {
     return (
       <div id="app">
         <div class={styles.wrapper}>
-          <div class={styles.videowrapper}>
+          <div class={styles.videowrapper} >
             <video class={styles.video}
-              autoPlay
-              loop
-              playsInline
-              defaultMuted
+              autoPlay="true" defaultMuted muted loop playsInline
             >
               <source src={Video} type="video/mp4" />
               Your browser does not support the video tag.
