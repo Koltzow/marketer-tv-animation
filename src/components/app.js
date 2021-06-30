@@ -15,7 +15,10 @@ export default class App extends Component {
       <div id="app">
         <div class={styles.wrapper}>
           <div class={styles.videowrapper}>
-            <video class={styles.video} src={Video} playsInline autoPlay muted loop/>
+            <video class={styles.video} playsInline autoPlay muted loop>
+              <source src={Video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <div class={styles.logowrapper}>
             <img class={styles.logo} src={Logo} />
