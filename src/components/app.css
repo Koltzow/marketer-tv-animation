@@ -13,12 +13,11 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: blue;
+  background: black;
   overflow: hidden;
 }
 
 .wrapper {
-  background: red;
   width: 100%;
   height: 100%;
 }
@@ -29,7 +28,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background: yellow;
 }
 
 .logowrapper {
