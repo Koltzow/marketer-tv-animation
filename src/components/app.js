@@ -1,30 +1,26 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import { Component } from 'preact';
 
-import Header from './header';
+import styles from './app.css';
 
-// Code-splitting is automated for routes
-import Home from '../routes/home';
-import Profile from '../routes/profile';
-
+import Video from '/assets/video.mp4';
+import Logo from '/assets/marketer-logo.svg';
 export default class App extends Component {
   /** Gets fired when the route changes.
    *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
    *	@param {string} event.url	The newly routed URL
    */
-  handleRoute = e => {
-    this.currentUrl = e.url;
-  };
-
+  
   render() {
     return (
       <div id="app">
-        <Header />
-        <Router onChange={this.handleRoute}>
-          <Home path="/" />
-          <Profile path="/profile/" user="me" />
-          <Profile path="/profile/:user" />
-        </Router>
+        <div class={styles.wrapper}>
+          <div class={styles.videowrapper}>
+            <video class={styles.video} src={Video} autoPlay={true} mute preload/>
+          </div>
+          <div class={styles.logowrapper}>
+            <img class={styles.logo} src={Logo} />
+          </div>
+        </div>
       </div>
     );
   }
