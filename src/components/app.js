@@ -15,7 +15,7 @@ export default class App extends Component {
       <div id="app">
         <div class={styles.wrapper}>
           <div class={styles.videowrapper}>
-            <video class={styles.video} src={Video} autoPlay={true} mute preload/>
+            <video class={styles.video} src={Video} autoPlay mute preload loop/>
           </div>
           <div class={styles.logowrapper}>
             <img class={styles.logo} src={Logo} />
