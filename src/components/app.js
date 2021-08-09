@@ -2,7 +2,7 @@ import { Component } from 'preact';
 
 import styles from './app.css';
 
-import Video from '/assets/video1.mp4';
+import Video from '/assets/Marketer_loop_16_9_Final_4K_02.mp4';
 import Logo from '/assets/marketer-logo.svg';
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -16,7 +16,12 @@ export default class App extends Component {
         <div class={styles.wrapper}>
           <div class={styles.videowrapper} >
             <video class={styles.video}
-              autoPlay="true" defaultMuted muted loop playsInline
+              muted={true}
+              autoPlay={true}
+              defaultMuted={true}
+              loop={true}
+              playsInline={true}
+              preload="auto"
             >
               <source src={Video} type="video/mp4" />
               Your browser does not support the video tag.
